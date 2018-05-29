@@ -1,0 +1,12 @@
+settings set target.x86-disassembly-flavor intel
+settings set prompt "(gicamerl) "
+
+script print "\033[34m"
+script print "   ___    ___       __  __         "
+script print "  /\_ \  /\_ \     /\ \/\ \        "
+script print "  \//\ \ \//\ \    \_\ \ \ \.___   "
+script print "    \ \ \  \ \ \   / _\ \ \ \__/\  "
+script print "     \_\ \_ \_\ \_/\ \_\ \ \ \_\ \ "
+script print "     /\____\/\____\ \___._\ \_.__/ "
+script print "     \/____/\/____/\/__._ /\/___/  "
+script print "\033[0m"
