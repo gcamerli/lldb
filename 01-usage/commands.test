@@ -1,0 +1,16 @@
+br s -n main
+run
+
+br s -p 'std::cin|tmp /= max|return biggest;'
+continue
+expr -- $rsi -= 4
+continue
+
+expr -- $rsi += 4
+process continue
+expr -- count = 0
+process continue
+expression -- tmp = min[0] + min[1] + min[2]
+process continue
+expression -- biggest = ((min[0] >= min[1]) ? min[0] : (min[1] >= min[2] ? min[1] : min[2]))
+process continue
