@@ -35,14 +35,14 @@ This action will bind the `test/source.cpp` file to the lldb debugger.
 To load more scripts inside the lldb prompt, re-execute for each file:
 
 ```shell
-(lldb) command script import _[path/file.py]_
+(lldb) command script import [path/file.py]
 ```
 
 Happy hacking!
 
 ### **Doc**
 
-Check the official [doc](https://lldb.llvm.org/).
+For more info, check the official [doc](https://lldb.llvm.org/).
 
 ### **License**
 
