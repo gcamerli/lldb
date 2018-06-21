@@ -1,0 +1,4 @@
+# Commands to load inside the lldb prompt
+
+br s -n main
+run
