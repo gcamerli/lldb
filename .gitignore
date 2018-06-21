@@ -1,0 +1,9 @@
+# Binaries
+example
+*.out
+
+# Debug files 
+*.dSYM
+
+# Miscellaneous
+*.pdf
