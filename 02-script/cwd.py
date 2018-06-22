@@ -13,4 +13,4 @@ def cwd(debugger, command, result, internal_dict):
 # Add the pwd command to the lldb python interpreter 
 def __lldb_init_module(debugger, internal_dict):
     debugger.HandleCommand('command script add -f cwd.cwd cwd')
-    print 'The "cwd" python command has been installed and is ready for use.'
+    print 'The \033[34mcwd\033[0m python command has been installed and is ready for use.'

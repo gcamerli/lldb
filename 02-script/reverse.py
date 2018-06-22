@@ -14,4 +14,4 @@ def reverse(debugger, command, result, internal_dict):
 
 def __lldb_init_module(debugger, internal_dict):
     debugger.HandleCommand('command script add -f reverse.reverse reverse')
-    print 'The "reverse" python command has been installed and is ready for use.'
+    print 'The \033[34mreverse\033[0m python command has been installed and is ready for use.'

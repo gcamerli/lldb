@@ -17,4 +17,4 @@ def info(debugger, command, result, internal_dict):
 
 def __lldb_init_module(debugger, internal_dict):
     debugger.HandleCommand("command script add -f info.info info")
-    print 'The "info" python command has been installed and is ready for use.'
+    print 'The \033[34minfo\033[0m python command has been installed and is ready for use.'

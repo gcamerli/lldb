@@ -13,4 +13,4 @@ def cd(debugger, command, result, internal_dict):
 # Add the cd command to the lldb python interpreter 
 def __lldb_init_module(debugger, internal_dict):
     debugger.HandleCommand('command script add -f cd.cd cd')
-    print 'The "cd" python command has been installed and is ready for use.'
+    print 'The \033[34mcd\033[0m python command has been installed and is ready for use.'
