@@ -19,4 +19,4 @@ def init(debugger, command, result, internal_dict):
 # Add the init command to the lldb python interpreter
 def __lldb_init_module(debugger, internal_dict):
     debugger.HandleCommand('command script add -f init.init init')
-    print 'The "init" python command has been installed and is ready for use.'
+    print 'The \033[34minit\033[0m python command has been installed and is ready for use.'
