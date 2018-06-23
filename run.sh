@@ -5,4 +5,4 @@
 clang++ -Wall -g test/source.cpp -o example
 
 # Execute lldb with the binary example
-lldb -- example 1 2 3
+lldb -- example
