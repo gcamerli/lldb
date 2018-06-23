@@ -8,7 +8,7 @@ import shlex
 def reverse(debugger, command, result, internal_dict):
     target = debugger.GetSelectedTarget()
     if not target:
-        print "error: invalid target, create a target using the 'target create' command."
+        print "\033[31merror\033[0m: invalid target, create a target using the 'target create' command."
     else:
         print "FT_"+str(target)[::-1]
 
