@@ -2,3 +2,17 @@
 
 br s -n main
 run
+br s -l 16
+br s -l 32
+br s -l 41
+continue
+expr tab[0] = tab[1]
+continue
+expr int $swap = tab[1]
+continue
+expr count = 0; tab[2] = tab[1]; tab[1] = $swap
+continue
+expr tmp = 0; int j = 0; while(j < max){tmp += min[j]; ++j;}
+continue
+expr int k = 0; while(k < max){biggest = (biggest <= min[k])? min[k] : biggest; ++k;}; max = 0
+continue
