@@ -2,7 +2,8 @@
 
 br s -n main
 run
-br s -l 16
+br s -l 16 -i 1
+br s -l 19 -o
 br s -l 32
 br s -l 41
 continue
