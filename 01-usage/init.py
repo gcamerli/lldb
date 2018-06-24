@@ -14,7 +14,6 @@ def init(debugger, command, result, internal_dict):
         exit()
 
     debugger.SetAsync(True)
-    #debugger.HandleCommand("br s -n main")
     debugger.HandleCommand("br s -l 16 -i 1")
     debugger.HandleCommand("br s -l 19 -o")
     debugger.HandleCommand("br s -l 32")
@@ -37,10 +36,10 @@ def init(debugger, command, result, internal_dict):
     debugger.HandleCommand("expr count = 0; tab[2] = tab[1]; tab[1] = $swap")
     debugger.HandleCommand("continue")
     time.sleep(0.2)
-    debugger.HandleCommand("expr tmp = 0; int j = 0; while(j < max){tmp += min[j]; ++j;}")
+    debugger.HandleCommand("expr tmp = 0; int j = 0; while(j < max) {tmp += min[j]; ++j;}")
     debugger.HandleCommand("continue")
     time.sleep(0.2)
-    debugger.HandleCommand("expr int k = 0; while(k < max){biggest = (biggest <= min[k])? min[k] : biggest; ++k;}; max = 0")
+    debugger.HandleCommand("expr int k = 0; while(k < max) {biggest = (biggest <= min[k]) ? min[k] : biggest; ++k;}; max = 0")
     debugger.HandleCommand("continue")
 
 # Add the init command to the lldb python interpreter

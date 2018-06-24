@@ -1,5 +1,6 @@
-# Commands to load inside the lldb prompt
+# Commands to load inside the lldb prompt | 16
 
+br s -n main
 br s -l 16 -i 1
 br s -l 19 -o
 br s -l 32
@@ -12,7 +13,7 @@ expr int $swap = tab[1]
 continue
 expr count = 0; tab[2] = tab[1]; tab[1] = $swap
 continue
-expr tmp = 0; int j = 0; while(j < max){tmp += min[j]; ++j;}
+expr tmp = 0; int j = 0; while(j < max) {tmp += min[j]; ++j;}
 continue
-expr int k = 0; while(k < max){biggest = (biggest <= min[k])? min[k] : biggest; ++k;}; max = 0
+expr int k = 0; while(k < max) {biggest = (biggest <= min[k]) ? min[k] : biggest; ++k;}; max = 0
 continue
