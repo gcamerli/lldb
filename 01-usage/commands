@@ -1,11 +1,10 @@
 # Commands to load inside the lldb prompt
 
-br s -n main
-run
 br s -l 16 -i 1
 br s -l 19 -o
 br s -l 32
 br s -l 41
+run
 continue
 expr tab[0] = tab[1]
 continue
